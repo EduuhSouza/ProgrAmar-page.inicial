@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+       <!-- ICONES  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- BOOTSTRAP -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="inclusao.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inclusão e Diversidade</title>
+</head>
+<body>
+
+    <header class="header">
+            
+        <img class="logo" src="img/logo.png" alt="">
+
+
+    <nav class="navbar">
+    
+        <a href="index.html"> //Contato</a>
+        <a href="#contato"> //Conteúdos </a>
+        <a href="index.html"> //WorkShop </a>
+        
+</nav>
+
+<button id="btn-menu" onclick="animar()">
+    <span class="linha"></span>
+    <span class="linha"></span>
+    <span class="linha"></span>
+</button>
+
+<!-- MOBILE -->
+
+<div class="menu-mobile" id="menu-mobile">
+
+<nav class="navbar-mobile">
+        <a href="index.html"> //Contato</a>
+        <a href="#contato"> //Conteúdos </a>
+        <a href="index.html"> //WorkShop </a>
+
+</nav>
+</div>
+</div>
+
+
+<script>
+//mobile
+
+const menuDiv = document.getElementById('menu-mobile');
+const btnAnimar = document.getElementById('btn-menu'); 
+
+menuDiv.addEventListener('click', animar)
+
+function animar(){
+menuDiv.classList.toggle('abrir');
+btnAnimar.classList.toggle('ativar');
+}
+
+//final mobile
+</script>
+<!--  final mobile -->
+
+<!-- DARKMODE -->
+<section class="darkmode">
+    <label>
+        <input id="check" type="checkbox" id="check">
+
+        <i class="fa-solid fa-sun" id="sun"></i>
+        <i class="fa-solid fa-moon" id="moon"></i>
+
+        <span class="toggle"></span>
+    </label>
+
+</section>
+
+
+<script>
+    const check = document.getElementById('check');
+
+    check.addEventListener('click', () => {
+        document.body.classList.toggle('darkmode');
+    })
+
+
+</script>
+</header>
+
+<!-- BOOTSTRAP -->
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img.carrossel/5.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://saberesepraticas.cenpec.org.br/wp-content/uploads/2021/06/dia_do_orgulho_banner.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2023/03/01/03/21/friends-7822175_1280.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+    
+</body>
+</html>
